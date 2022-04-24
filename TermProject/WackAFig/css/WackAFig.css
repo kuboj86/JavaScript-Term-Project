@@ -1,0 +1,71 @@
+*, *:before, *:after {
+    box-sizing: inherit;
+  }
+  body {
+      background-image: url("../media/openField.jpg");
+      background-repeat:no-repeat;
+      background-size:cover;
+      padding: 0;
+      margin:0;
+  }
+  h1 {
+    text-align: center;
+    font-size: 6rem;
+    line-height:1;
+    margin-bottom: 0;
+    color:blue;
+  }
+  
+  .controls {
+    margin: 20px 5px;
+    text-align: center;
+  }
+  
+  .score {
+    background:rgba(255,255,255,0.2);
+    padding:0 3rem;
+    line-height:1;
+    border-radius:2rem;
+    color: red;
+  }
+  
+  .game {
+    width:900px;
+    height:700px;
+    display:flex;
+    flex-wrap:wrap;
+    margin:0 auto;
+  }
+  
+  .hole {
+    flex: 1 0 33.33%;
+    overflow: hidden;
+    position: relative;
+    
+  }
+  
+  .hole:after {
+    display: block;  
+    background: url('../media/figTree.png') bottom center no-repeat;
+    background-size:contain;
+    content:'';
+    width: 100%;
+    height:40%;
+    position: absolute;
+    z-index: 2;
+    bottom:-30px;
+  }
+  
+  .fig {
+    background:url('../media/fig.png') bottom center no-repeat;
+    background-size: 60%;
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    height: 60%;
+    transition:all 0.4s;
+  }
+  
+  .hole.up .fig {
+    top:0;
+  }
