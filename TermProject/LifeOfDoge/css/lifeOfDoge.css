@@ -1,0 +1,53 @@
+html, body{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 9%, rgba(1,1,5,1) 35%, rgba(1,67,83,1) 71%, rgba(23,167,196,1) 99%);
+    height: 99%;
+}
+canvas {
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    border: 1px solid #d3d3d3;
+    background-image: url('../media/moonEarth.jpg');
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+h1{
+    text-align: center;
+    font-weight: bolder;
+    font-size: 40px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: aliceblue;
+    margin-right: 5%;
+    max-width: 20%;
+    margin-left: 40%;
+}
+p{
+    text-align: center;
+    font-weight: bolder;
+    font-size: x-large;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: aliceblue;
+    margin-right: 5%;
+    max-width: 20%;
+    margin-left: 40%;
+}
+.controls{
+    font-weight: bolder;
+    font-size: x-large;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: aliceblue;
+}
+.newGameButton{
+    margin-left: 47%;
+
+}
+.newGame{
+    background-color: rgba(23,167,196,1);
+    font-weight: bolder;
+    font-size: x-large;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: aliceblue;
+}

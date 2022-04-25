@@ -32,6 +32,7 @@ function gameLost(){
     return rect.right >= window.innerWidth || rect.left <= 0;
 }
 
+//check to determine which side of the gamearea the ball crosses to determine who gets a point
 function gameOver(){
     var rect = ball.rect();
     if(rect.right >= window.innerWidth){

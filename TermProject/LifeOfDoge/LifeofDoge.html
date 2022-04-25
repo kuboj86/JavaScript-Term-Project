@@ -2,10 +2,20 @@
 <html>
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="css/canvasGame.css" rel="stylesheet" type="text/css" />
+    <link href="css/lifeOfDoge.css" rel="stylesheet" type="text/css" />
   </head>
+  <div class="controls"></div>
+  <h1>Controls</h1>
+    <p>
+      W   moves Doge Up<br>
+      A   moves Doge Left<br>
+      S   moves Doge Down<br>
+      D   moves Doge Right
+    </p>
   <body onload="startGame()">
-    <!-- <canvas id="canvas" width="1000" height="600">Your browser does not support the HTML5 canvas tag.</canvas> -->
-    <script src="js/canvasGame.js"></script>
+    <script src="js/lifeOfDoge.js"></script>
+    <div class="newGameButton">
+      <button id="newGame" class="newGame" onclick="location=URL">New Game</button>
+    </div>
   </body>
 </html>

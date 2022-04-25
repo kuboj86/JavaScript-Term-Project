@@ -10,13 +10,15 @@ function startGame() {
     timeUp = false;
     score = 0;
     peep();
-    setTimeout(() => timeUp = true, 10000)
+    setTimeout(() => timeUp = true, 20000)
   }
 
 function randomTime(min, max) {
   return Math.round(Math.random() * (max - min) + min);
 }
 
+//Gets the total number of divs with the class of "holes" and creates a list
+//Than will randomly pick one of those divs.
 function randomHole(holes) {
   const holeNum = Math.floor(Math.random() * holes.length);
   const hole = holes[holeNum];
@@ -29,9 +31,11 @@ function randomHole(holes) {
   return hole;
 }
 
+//Logic to handle the fig to appear for a random duration between .2 and 1 second
+//When the duration is expired, the image 'disappears'
 function peep() {
     console.log(setTimeout)
-  const time = randomTime(500, 1000);
+  const time = randomTime(200, 1000);
   const hole = randomHole(holes);
   hole.classList.add('up');
   setTimeout(() => {
@@ -40,6 +44,7 @@ function peep() {
   }, time);
 }
 
+//Logic when the fig is clicked, the image will disappear and the score will get updated.
 function gotem(event) {
   score++;
   this.parentNode.classList.remove('up');
